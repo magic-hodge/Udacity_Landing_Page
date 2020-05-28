@@ -1,0 +1,134 @@
+/* Styling for customized navBar. */
+
+/* Styling for the nav tag. */
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	box-sizing: border-box;
+	background-color: #0d0d0d;
+}
+
+/* Styling for the navMenu. */
+
+.navMenu {
+	color: #808080;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 18px;
+
+}
+
+/* Styling for the navigation title. */
+
+.navTitle {
+	color: #808080;
+}
+
+/* Styling for the nav list. */
+
+.navList {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+
+}
+
+/* Styling for the navList aLinks */ 
+
+.aLink {
+	color: #808080;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+/* Styling for the navList links on hover. Makes them turn blue. */
+
+.navList a:hover {
+	color: #3a5694;
+	cursor: pointer;
+}
+
+/* Styling for the navList list items. */
+
+.navList li {
+	list-style-type: none;
+}
+
+/* Styling for navList ul */
+
+.navList ul{
+	display: flex;
+	flex-direction: column;
+}
+
+/* Styling for the burger  */ 
+
+.burger {
+	display: none;
+}
+
+/* Styling for the burger lines. */ 
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	background-color: #808080;
+}
+
+/* Styling for the burger lines on hover. */ 
+
+.burger div:hover {
+	background-color: #3a5694;
+/* I'm trying to make all the burger lines turn blue on burger hover. . . Pls help. It only does one at a time. */
+}
+
+/* Media query for ipad pros & other tablets. */
+
+@media screen and (max-width: 1024px) {
+	.navList {
+	width: 60%;
+	}
+}
+
+/* Media query for small screens below tablet-size for the burger to show. */
+
+@media screen and (max-width: 768px) {
+	
+	.navList {
+	position: absolute;
+	right: 0px;
+	height: 40vh;
+	top: 8vh;
+	background-color: #0d0d0d;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 35%;
+	opacity: 0;	
+	transition: 0.5s ease-in;
+	}
+
+	.burger {
+		display: block;
+	}
+}
+
+/* Styling for fading the mobile menu in when active class. */
+
+.nav-active {
+	opacity: 1;
+	transition: 0.5s ease-out;
+}
+
+/* Styling for the navLinks active state */
+
+.aLinkActive {
+	color: #b2c918;
+}
